@@ -1,0 +1,29 @@
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+h1,h2{
+    font-family: 'Merienda One', cursive;
+
+}
+.colu{
+    border:1px solid black;
+    margin-bottom: 500px;
+}
+.bgc{
+    background-color: #1592E6;
+    color: white;
+    
+}
+.background-i {
+    background-image: url("../image/background.jpg");
+    background-size:cover;
+    color: white;
+    height: 500px;
+    padding-left: 50px;
+    padding-top: 250px;    
+    
+  }
+  .tab_backgroundcolor{
+      background-color: #f7f7f7;
+  }
+  
