@@ -7,7 +7,7 @@ h1,h2{
 }
 .colu{
     border:1px solid black;
-    margin-bottom: 500px;
+    
 }
 .bgc{
     background-color: #1592E6;
@@ -23,7 +23,45 @@ h1,h2{
     padding-top: 250px;    
     
   }
+
+  
+
   .tab_backgroundcolor{
       background-color: #f7f7f7;
   }
   
+  .card-img-top{
+      max-height: 260px;
+      width: auto;
+  }
+  .card-body{
+      max-height: 800px;
+  }
+
+  .modal-body label{
+      float: left;
+  }
+  .modal span {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 0 150px;
+}
+
+.list-unstyled li{
+    padding: 5px;
+}
+
+.inline {
+    display: inline;
+  }
+
+.changeUpLoadIcon {
+    width: 128px;
+    height: 128px;    
+    background: url("../image/photoUpload1.png") no-repeat;
+    
+}
+.changeUpLoadIcon:hover {
+    background: url("../image/photoUpload2.png") no-repeat;
+    
+}
