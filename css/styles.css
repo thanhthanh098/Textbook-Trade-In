@@ -52,7 +52,7 @@ h1,h2{
 }
 
 .inline {
-    display: inline;
+    display: inline-block;
   }
 
 .changeUpLoadIcon {
@@ -64,4 +64,7 @@ h1,h2{
 .changeUpLoadIcon:hover {
     background: url("../image/photoUpload2.png") no-repeat;
     
+}
+.justify-content-end a{
+    color: white;
 }

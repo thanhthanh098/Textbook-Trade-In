@@ -21,6 +21,8 @@
     
 <body>
 
+
+
       
 
 <div class="container">
@@ -85,28 +87,59 @@
     <div class="row bgc mt-3">
         <h3> Manage your item listings</h3>        
     </div>
-    <div class="col mt-3">
+    <div class="was-validated col mt-3">
         <form>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-4 col-form-label">Give your item a title <i data-toggle="tooltip" data-html="true" title="<b>Item Title Tips</b> <p>Just a title of textbook only</p>" class="far fa-question-circle"></i></label>
-              <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
+                <label for="inputTitle" class="col-sm-4 col-form-label">Give your item a title <i data-toggle="tooltip" data-html="true" title="<b>Item Title Tips</b> <p>Just a title of textbook only</p>" class="far fa-question-circle"></i></label>
+                <div class="col-sm-8">
+                    <input required type="text" class="form-control" id="inputTitle">                    
+                </div>
+                
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-4 col-form-label"><h4>Add photos of your item</h4>Upload pictures by clicking at right, or by dragging picture(s) from your computer to this form.</label>
                 <div class="col-sm-8 text-center">
                     <label for="exampleFormControlFile1"><div class="changeUpLoadIcon"></div></label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-              </div>
+                    <input type="file" class="d-none form-control-file" id="exampleFormControlFile1">
+                </div>
             </div>
-            
+            <div class="form-group row">
+                <label for="inputISBN" class="col-sm-4 col-form-label">ISBN</label>
+                <div class="col-sm-8">
+                    <input required type="text" class="form-control" id="inputISBN">
+                </div>
+            </div>
+            <div class=" form-group row">
+                <label for="inputCondition" class="col-sm-4 col-form-label">Condition</label>
+                <div class="col-sm-8">
+                    <select id="inputCondition" class="custom-select" required>
+                        <option value="">Choose.. </option>
+                        <option value="used">Used(normal wear)</option>
+                        <option value="likeNew">Like New</option>
+                        <option value="new">New</option>
+                        <option value="other">Other</option>
+                      </select>
+                      <div class="invalid-feedback">Please select condition of item</div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPrice" class="col-sm-4 col-form-label">Set a price for your item</label>
+                <div class="col-sm-8 ">
+                    <i class=" inline fas fa-lg fa-dollar-sign">&nbsp; </i><input id="inputPrice" required type="text" class="inline w-25 form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputDetail" class="col-sm-4 col-form-label">Detailed Item Description (Optional) </label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" name="" id="inputDetail" cols="30" rows="5"></textarea>
+                </div>
+            </div>
 
 
             
             <div class="form-group row">
               <div class="col text-right">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Post</button>
               </div>
             </div>
           </form>
